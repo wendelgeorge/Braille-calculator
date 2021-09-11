@@ -10,8 +10,6 @@ r = sr.Recognizer()
 #Ler o microfone
 mic = sr.Microphone()
 
-
-
 with mic as fonte:
     r.adjust_for_ambient_noise(fonte)
     print("Fale alguma coisa")
